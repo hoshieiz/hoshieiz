@@ -18,7 +18,7 @@ class LoadingBar{
 		this.textElement = document.createElement("div");
 		this.textElement.style.color = options.textColor || '#fff';
 		this.textElement.style.marginBottom = '20px'; // Add some space between text and bar
-		this.textElement.innerText = options.text || 'Lets Experience This Together';
+		this.textElement.innerText = options.text || 'Loading...';
 		this.domElement.appendChild(this.textElement);
 
 		const barBase = document.createElement("div");
