@@ -6,7 +6,7 @@ class LoadingBar {
 		this.domElement.style.left = '0';
 		this.domElement.style.width = '100%';
 		this.domElement.style.height = '100%';
-		this.domElement.style.background = options.backgroundColor || '#000'; // Change background color
+		this.domElement.style.background = options.backgroundColor || '#f5a6e5'; // Change background color
 		this.domElement.style.opacity = '0.7';
 		this.domElement.style.display = 'flex';
 		this.domElement.style.flexDirection = 'column'; // Ensure text and bar are stacked vertically
@@ -18,7 +18,7 @@ class LoadingBar {
 		this.textElement = document.createElement("div");
 		this.textElement.style.color = options.textColor || '#fff';
 		this.textElement.style.marginBottom = '20px'; // Add some space between text and bar
-		this.textElement.innerText = options.text || 'Loading...';
+		this.textElement.innerText = options.text || 'Lets Experience this together';
 		this.domElement.appendChild(this.textElement);
 
 		const barBase = document.createElement("div");
