@@ -1,4 +1,3 @@
-
 import * as THREE from './libs/three/three.module.js';
 import { GLTFLoader } from './libs/three/jsm/GLTFLoader.js';
 import { DRACOLoader } from './libs/three/jsm/DRACOLoader.js';
@@ -29,7 +28,7 @@ class App{
 		this.scene = new THREE.Scene();
         this.scene.add( this.dolly );
         
-		const ambient = new THREE.HemisphereLight(0xFFFF00, 0x000000, 0.3);
+		const ambient = new THREE.HemisphereLight(0xFFFFFF, 0xAAAAAA, 0.8);
 		this.scene.add(ambient);
 
 		this.renderer = new THREE.WebGLRenderer({ antialias: true });
